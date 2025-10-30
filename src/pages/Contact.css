@@ -1,0 +1,149 @@
+.contact-page {
+  font-family: "Poppins", sans-serif;
+  color: #3c2f2f;
+}
+
+/* Banner */
+.contact-banner {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: overlay;
+}
+
+.contact-banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-banner p {
+  font-size: 18px;
+  color: #ffe9b3;
+}
+
+/* Info Section */
+.contact-info-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding: 50px 20px;
+}
+
+.info-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: center;
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.info-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.info-card h3 {
+  color: #8b4513;
+  margin-bottom: 8px;
+}
+
+/* Form */
+.contact-form-container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #fffaf4;
+}
+
+.contact-form-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #3c2f2f;
+}
+
+.contact-form-container p {
+  color: #6f4e37;
+  margin-bottom: 25px;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  width: 80%;
+  max-width: 500px;
+  padding: 12px 15px;
+  border: 1px solid #d9c3a6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  border-color: #8b4513;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+.contact-form-container button {
+  background: #8b4513;
+  color: #fff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form-container button:hover {
+  background: #a5673f;
+}
+
+.status-message {
+  margin-top: 15px;
+  color: #3c2f2f;
+  font-weight: 500;
+}
+
+/* Map */
+.map-container {
+  width: 100%;
+  height: 400px;
+  margin-top: 30px;
+  border-top: 2px solid #e0c8a0;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-banner h1 {
+    font-size: 36px;
+  }
+
+  .info-card {
+    width: 90%;
+  }
+}

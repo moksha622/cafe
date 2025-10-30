@@ -1,0 +1,105 @@
+.footer {
+  background: #333;
+  color: white;
+  padding: 50px 60px 30px 60px; /* more gap from edges */
+  font-family: Arial, sans-serif;
+}
+
+/* Top section with Quick Links and Logo */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  max-width: 900px; /* limit width for better spacing */
+  margin-left: auto;
+  margin-right: auto;
+  gap: 50px; /* good looking space between quick links and logo */
+}
+
+/* Quick Links */
+.quick-links {
+  flex: 1;
+  text-align: left;
+}
+
+.quick-links h4 {
+  margin-bottom: 12px;
+  font-size: 18px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links ul li {
+  margin: 8px 0;
+}
+
+.quick-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #ffcc00;
+}
+
+/* Logo */
+.footer-logo {
+  flex: 0 0 auto; /* keep logo size fixed */
+  text-align: right;
+}
+
+.footer-logo img {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Social Media row below top section */
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 20px;
+}
+
+.social-media img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.social-media img:hover {
+  transform: scale(1.2);
+}
+
+/* Footer bottom text */
+.footer-bottom {
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .quick-links, .footer-logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+

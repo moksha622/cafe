@@ -1,0 +1,26 @@
+.payment-page {
+  text-align: center;
+  padding: 60px;
+  background-color: #fefaf5;
+  min-height: 100vh;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.payment-logo {
+  width: 120px;
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.payment-logo:hover {
+  transform: scale(1.1);
+}
